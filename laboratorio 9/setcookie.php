@@ -13,6 +13,9 @@ if(!empty($_POST)) {
     // Leggi i valori ricevuti dal form
         $background_color = $_POST["background"];
         $text_color = $_POST["TextColor"];
+
+
+    /** sarebbe il caso di verificare (quantomeno) che non siano nulli */
         
     // combiniamo i valori in una singola stringa
         $cookie_value = $background_color . "|" . $text_color;
@@ -24,7 +27,7 @@ if(!empty($_POST)) {
         header("Location: ./index.php");
 }
 
-// stampa l'array $_POST
+// stampa l'array $_POST -- serve per il debug
     foreach ($_POST as $key => $value) {
         echo "<tr>";
         echo "<td>";
