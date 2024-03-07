@@ -1,0 +1,43 @@
+h1 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra gli elementi lungo l'asse principale (verticale) */
+    height: 200px; /* Altezza aggiornata per dare spazio sufficiente ai bottoni */
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid cadetblue;
+    background-color: cadetblue;
+    box-sizing: border-box;
+
+    border-radius: 99px;
+}
+
+/* Aggiunto un wrapper per i label e gli input */
+.form-group {
+    display: flex;
+    align-items: center; /* Allinea gli elementi lungo l'asse trasversale (orizzontale) */
+    margin-bottom: 10px; /* Spazio tra i gruppi di input */
+}
+
+label {
+    margin-right: 10px; /* Spazio tra etichetta e input */
+}
+
+input[type="submit"] {
+    margin-top: 10px; /* Spazio aggiunto sopra il pulsante */
+    padding: 10px 20px;
+    background-color: #c1e6d1;
+    color: #252323;
+    border: none;
+    cursor: pointer;
+}

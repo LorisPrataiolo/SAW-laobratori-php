@@ -13,7 +13,7 @@
     
     /************************************************** GATHERING & CAMPS VERIFY **************************************************/
     $email = $password = "";
-    $filename = "C:/xampp/htdocs/SAW-laobratori-php/laboratorio 5/users.txt";
+    $filename = "./users.txt";
     
     if($_SERVER["REQUEST_METHOD"] != "POST") {
      exit;
@@ -43,11 +43,7 @@
       
     /*********************************************** FIND & CHECK VARIABLES **************************************************** */
 
-    // Verifica se il file è leggibile
-    if (!is_readable($filename)) {
-        echo "error: Il file non è leggibile\n";
-        exit;
-    }
+
 
     // variabili per tener traccia della corrispondenza delle variabili
         $found_email = false; 
@@ -75,7 +71,7 @@
         echo "HoLy sShItOh! Credenziali non valide. Registrati, per favore.\n";
         exit();
     } else {
-        // echo "<h1>WELCOME BACK stronzo!</h1>";
+    
 
 
         /** 1.3 - se l'accesso viene eseguito creo due variabili di sessione */
