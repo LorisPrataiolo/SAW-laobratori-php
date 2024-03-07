@@ -21,7 +21,7 @@
             <input type="color" id="background" name="background">
         </div>
 
-        <input type="submit" name="submit">
+        <input type="submit" name="submit" >
     </form>
     
     </body>

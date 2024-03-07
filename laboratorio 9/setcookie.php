@@ -8,7 +8,7 @@
 
 <?php
 
-if(isset($_POST['submit'])) {
+if(!empty($_POST)) {
 
     // Leggi i valori ricevuti dal form
         $background_color = $_POST["background"];
