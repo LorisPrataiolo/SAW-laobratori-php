@@ -1,15 +1,43 @@
+<?php
+
+if(!isset($_COOKIE["mycookie"])) { 
+  echo "il cookie non esiste";
+  exit;
+}
+
+$cookie_value = $_COOKIE["mycookie"];
+    
+    // Suddivide la stringa utilizzando il delimitatore
+    $values = explode("|", $cookie_value);
+    
+    // Ora $values contiene i valori separati
+    $background_color = $values[0];
+    $text_color = $values[1];
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
 <head>
     <title>Homepage</title>
-    <style>
+
+
+    
     <?php
-      // PARTE 2 DEL LABORATORIO
-      // RIDEFINISCI LO STILE DEL TAG <body> USANDO 
-      // I VALORI MEMORIZZATI NEL COOKIE
+    /******** impostiamo i nuovi colori nella pagina iniziale ********* */
+    echo "<style>
+     
+        body {
+          background-color: {$background_color};
+          color: {$text_color};
+        }
+
+    
+    </style>"
     ?>
-    </style>
 </head>
 
 <body>
