@@ -2,7 +2,15 @@ header{
     background-color: rgb(193, 164, 237);
    
     position: fixed;
-    
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
 
 }
 /*********** Navigation Bar *************/
