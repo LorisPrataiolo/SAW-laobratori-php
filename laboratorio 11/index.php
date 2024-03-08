@@ -13,12 +13,12 @@
 
 
             <nav class="navbar">
-                <ul>
-                    <li><a href="./index.php">Home</a></li>
-                    <li><a href="news.asp">News</a></li>
-                    <li><a href="contact.asp">Contact</a></li>
-                    <li><a href="about.asp">About</a></li>
-                </ul>
+                
+                    <a href="./index.php">Home</a>
+                    <a href="news.asp">News</a>
+                    <a href="contact.asp">Contact</a>
+                    <a href="about.asp">About</a>
+                
             </nav>
 
         </header>

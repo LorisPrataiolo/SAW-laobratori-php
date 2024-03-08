@@ -5,29 +5,22 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     padding: 20px 70px;
     justify-content: space-between;
     align-items: center;
+    display: flex;
     z-index: 100;
+
+
 
 
 }
 /*********** Navigation Bar *************/
 
-.navbar ul{
-        list-style-type: none;
-        overflow: hidden;
-        display:inline-block;
-        
-  
-
-}
-
 .navbar a {
     text-decoration: none;
     text-align: center;
-    display: block;
+    display: inline-block;
     padding: 15px;
     border-radius: 88px;
 
@@ -44,14 +37,9 @@ header{
     background-color: burlywood;
 }
 
-.navbar li {
-    float: inline-end;
-    
 
-}
+
+
 
 
 /***************** icon *****************/
-.web_site_logo {
-    float: left;
-}
