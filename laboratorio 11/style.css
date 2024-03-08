@@ -1,10 +1,17 @@
 header{
-    display: inline;
+    background-color: rgb(193, 164, 237);
+   
+    position: fixed;
+    
+
 }
 /*********** Navigation Bar *************/
+
 .navbar ul{
         list-style-type: none;
         overflow: hidden;
+        display:inline-block;
+        
   
 
 }
@@ -37,12 +44,6 @@ header{
 
 
 /***************** icon *****************/
-.web-site-logo img {
-
-    display: flexbox;
-    position: fixed;
-    height: auto;
-    left: 0px;
-    width: 250px;
-
+.web_site_logo {
+    float: left;
 }
