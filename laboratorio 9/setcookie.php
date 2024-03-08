@@ -13,12 +13,13 @@ if(!empty($_POST)) {
     // Leggi i valori ricevuti dal form
         $background_color = $_POST["background"];
         $text_color = $_POST["TextColor"];
+        $font_family = $_POST["font-family"];
 
 
     /** sarebbe il caso di verificare (quantomeno) che non siano nulli */
         
     // combiniamo i valori in una singola stringa
-        $cookie_value = $background_color . "|" . $text_color;
+        $cookie_value = $background_color . "|" . $text_color . "|" . $font_family;
     
     // Memorizza la stringa nel cookie
         setcookie("mycookie", $cookie_value, time() + (86400 * 30), "/"); // 86400 secondi = 1 giorno

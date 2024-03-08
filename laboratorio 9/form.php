@@ -21,6 +21,19 @@
             <input type="color" id="background" name="background">
         </div>
 
+        
+        <div class="form-group">
+            <label for="font-family">font family</label>
+            <select name="font-family">
+                <option value="Georgia, serif">choose your font-style</option>
+                <option value="Georgia, serif">Georgia, serif        </option>
+                <option value="sans-serif">       sans-serif         </option>
+                <option value="serif">              serif            </option>
+                <option value="cursive">           cursive           </option>
+                <option value="system-ui">        system-ui          </option>
+            </select>
+        </div>
+
 
         <input type="submit" name="submit" >
     </form>

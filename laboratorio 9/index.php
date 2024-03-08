@@ -13,6 +13,7 @@ $cookie_value = $_COOKIE["mycookie"];
     // Ora $values contiene i valori separati
     $background_color = $values[0];
     $text_color = $values[1];
+    $font_family = $values[2];
 
 
 ?>
@@ -33,6 +34,7 @@ $cookie_value = $_COOKIE["mycookie"];
         body {
           background-color: {$background_color};
           color: {$text_color};
+          font-family: {$font_family};
         }
 
     
