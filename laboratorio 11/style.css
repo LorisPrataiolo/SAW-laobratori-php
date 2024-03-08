@@ -1,0 +1,48 @@
+header{
+    display: inline;
+}
+/*********** Navigation Bar *************/
+.navbar ul{
+        list-style-type: none;
+        overflow: hidden;
+  
+
+}
+
+.navbar a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    border-radius: 88px;
+
+
+    background-color: rgb(67, 67, 67);
+    color: antiquewhite;
+
+    justify-content: right;
+    margin-left: 10px;
+
+}
+
+.navbar a:hover{
+    background-color: burlywood;
+}
+
+.navbar li {
+    float: inline-end;
+    
+
+}
+
+
+/***************** icon *****************/
+.web-site-logo img {
+
+    display: flexbox;
+    position: fixed;
+    height: auto;
+    left: 0px;
+    width: 250px;
+
+}
