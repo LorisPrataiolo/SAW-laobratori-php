@@ -37,6 +37,8 @@ $cookie_value = $_COOKIE["mycookie"];
 
     
     </style>"
+
+    
     ?>
 </head>
 
