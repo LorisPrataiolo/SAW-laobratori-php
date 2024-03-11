@@ -1,20 +1,23 @@
-header{
+
+
+header {
     background-color: rgb(193, 164, 237);
-   
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     padding: 20px 70px;
     justify-content: space-between;
     align-items: center;
     display: flex;
     z-index: 100;
-
-
-
-
+    position: relative;; /* Cambia da 'top' a 'fixed' */
+    top: 0;
+    left: 0;
+    right: 0;
 }
+
+main {
+    margin-top: 100px; /* Assicurati di lasciare spazio sotto l'header */
+}
+
+
 /*********** Navigation Bar *************/
 
 .navbar a {
@@ -42,4 +45,4 @@ header{
 
 
 
-/***************** icon *****************/
+/***************** form *****************/

@@ -15,7 +15,7 @@
             <nav class="navbar">
                 
                     <a href="./index.php">Home</a>
-                    <a href="news.asp">News</a>
+                    <a href="./SignIn.php">Sing-In</a>
                     <a href="contact.asp">Contact</a>
                     <a href="about.asp">About</a>
                 
