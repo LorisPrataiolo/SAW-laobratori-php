@@ -1,5 +1,4 @@
 
-
 header {
     background-color: rgb(193, 164, 237);
     padding: 20px 70px;
@@ -12,11 +11,6 @@ header {
     left: 0;
     right: 0;
 }
-
-main {
-    margin-top: 100px; /* Assicurati di lasciare spazio sotto l'header */
-}
-
 
 /*********** Navigation Bar *************/
 
@@ -39,9 +33,6 @@ main {
 .navbar a:hover{
     background-color: burlywood;
 }
-
-
-
 
 
 
