@@ -3,7 +3,7 @@
     <head>
 
         <title>Homepage</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
 
     </head>
 
@@ -15,7 +15,7 @@
             <nav class="navbar">
                 
                     <a href="./index.php">Home</a>
-                    <a href="./SignIn.php">Sing-In</a>
+                    <a href="./pages/SignIn.php">Sing-In</a>
                     <a href="contact.asp">Contact</a>
                     <a href="about.asp">About</a>
                 
