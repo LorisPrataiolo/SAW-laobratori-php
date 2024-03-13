@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 
     <header>
-        <img class="web_site_logo" src="logo.jpg" alt="logo" width="150" height="150">
+        <img class="web_site_logo" src="../img/logo.jpg" alt="logo" width="150" height="150">
 
         <h3>Insert E-mail & password and Click SignIn</h3>
         <nav class="navbar">
