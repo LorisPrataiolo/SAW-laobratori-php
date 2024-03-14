@@ -41,7 +41,17 @@
         }
 
 
-        if($errors) $_SESSION["errors_singin"] = $errors;
+    //  non ci siano errore possiamo procedere con la sessione
+        require_once './config_session.inc.php';
+
+        // nota: si e' corretto fare cosi' altrimenti non potremmos
+        // scrivere all'interno di $_SESSION
+        if($errors) {
+            $_SESSION["errors_singin"] = $errors;
+            header("Location: ../index.php");
+        }
+
+
 
 
 

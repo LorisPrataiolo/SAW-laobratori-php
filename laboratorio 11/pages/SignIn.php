@@ -27,19 +27,24 @@
 
 <main>
     <!-- Contenuto principale della pagina -->
-    <form method="post" action="./logInVerfy.php">
+    <form method="post" action="../include/signin.inc.php">
+
+
+        <label for="firstname">Firstname</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email"><br>
 
         <label for="password">Password</label><br>
         <input type="password" id="password" name="password"><br>
 
-
-        <label for="repeatpassword">Repeat your Password</label><br>
-        <input type="password" id="repeatpassword" name="repeatpassword"><br>
-
         <input type="submit" name="Sign-In">
     </form>
+
+
+
+
 </main>
 
 </body>
