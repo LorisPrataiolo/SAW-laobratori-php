@@ -17,5 +17,8 @@ laboratorio 11
     -> attenzione alla sicurezza delle sessioni
 
 
+siccome le pagine sono solo 4, utilizzare include, mi scoccia. Quindi non lo userò
+tuttavia per capire come usarlo: https://www.youtube.com/watch?v=fMTvi3Rys-o
+
 Modifiche che apporterò al laboratorio: 
     - le credenziali di login verranno verificate dal database
