@@ -4,5 +4,8 @@ CREATE TABLE users (
     lastname VARCHAR(30),
     pwd VARCHAR(255) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    created_at DATETIME NOT NULL DEFAULT CURRENT_TIME
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIME,
+
+    
+    PRIMARY KEY (id)
 );
