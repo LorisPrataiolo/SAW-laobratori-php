@@ -29,7 +29,10 @@
         if ( !is_email_valid($email)) {
             # code...
         }
-        
+
+        if ( is_email_registred($pdo,  $email)){
+
+        }
 
     } catch (PDOException $e) {
         die("Query has failed: ". $e->getMessage());
