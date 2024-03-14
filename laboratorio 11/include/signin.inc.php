@@ -22,6 +22,15 @@
 
         /******* ERROR HANDLERS ******* */ 
 
+        if (is_input_empty($firstname, $password, $email)) {
+            
+        }
+
+        if ( !is_email_valid($email)) {
+            # code...
+        }
+        
+
     } catch (PDOException $e) {
         die("Query has failed: ". $e->getMessage());
     }
