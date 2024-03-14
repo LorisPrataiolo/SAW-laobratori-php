@@ -1,0 +1,21 @@
+laboratorio 11
+
+ - utilizzare le sessioni in modo tale da poter far accedere allo
+    user la parte per gli utenti autenticati
+    |
+    -> pagine di login e logout
+    |
+    -> variabili di sessione per passare il nome dell' utente;
+        infatti una volta effettuato il login vogliamo che:
+        |
+        -> la navbar cambi: Home - ShowProfile - Logout 
+        |
+        -> stampi il nome dell'utente "welcome @NomeUtente"
+
+
+    |
+    -> attenzione alla sicurezza delle sessioni
+
+
+Modifiche che apporterò al laboratorio: 
+    - le credenziali di login verranno verificate dal database
