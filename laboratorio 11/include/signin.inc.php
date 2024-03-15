@@ -47,7 +47,9 @@
         // scrivere all'interno di $_SESSION
         if($errors) {
             $_SESSION["errors_signin"] = $errors;
-            header("Location: ../pages/signin.php");
+            header("Location: ../pages/signIn.php");
+            die(); // senza die() all'interno del server si genererebbero comunque degli user con
+                    // i campi vuoti; nonostante gli errori vengano correttamente identificati
         }
 
 
@@ -55,11 +57,11 @@
             create_user( $pdo,  $firstname,  $email,  $password);
             
 
-            /* una volta creato lo user, per il momento rispediamo l'utente alla home
+            /* una volta creato lo user, per il momento rispediamo l'utente alla signin page
             page. Scriveremo il messaggio di successo all'interno dell'url */
 
             
-            header("Location: ../index.php?signin=success");
+            header("Location: ../pages/signIn.php?signin=success");
 
             $pdo = NULL;
             $stmt = NULL;
@@ -69,7 +71,7 @@
 
 
 
-
+           
 
 
 
