@@ -52,6 +52,21 @@
         }
 
 
+<<<<<<< Updated upstream
+=======
+        create_user( $pdo,  $firstname,  $email,  $password);
+        
+
+        /* una volta creato lo user, per il momento rispediamo l'utente alla home
+        page. Scriveremo il messaggio di successo all'interno dell'url */
+
+        
+        header("Location: ../index.php?signin=success");
+
+        $pdo = NULL;
+        $stmt = NULL;
+        die();
+>>>>>>> Stashed changes
 
 
 
