@@ -41,7 +41,6 @@
         }
 
 
-    //  non ci siano errore possiamo procedere con la sessione
         require_once './config_session.inc.php';
 
         // nota: si e' corretto fare cosi' altrimenti non potremmos
@@ -52,26 +51,33 @@
         }
 
 
-<<<<<<< Updated upstream
-=======
-        create_user( $pdo,  $firstname,  $email,  $password);
-        
+    <<< HEAD
+            create_user( $pdo,  $firstname,  $email,  $password);
+            
 
-        /* una volta creato lo user, per il momento rispediamo l'utente alla home
-        page. Scriveremo il messaggio di successo all'interno dell'url */
+            /* una volta creato lo user, per il momento rispediamo l'utente alla home
+    <<<<<<< HEAD
+            page. Scriveremo il messaggio di successo all'interno dell'url */
 
-        
-        header("Location: ../index.php?signin=success");
+            
+            header("Location: ../index.php?signin=success");
 
-        $pdo = NULL;
-        $stmt = NULL;
-        die();
->>>>>>> Stashed changes
+            $pdo = NULL;
+            $stmt = NULL;
+            die();
+    >>>>>>> Stashed changes
+    =======
+            page */
+
+            header("Location: ../index.php");
+
+
+    >>>>>>> 3fa5c4e9eaf133948a60e4ba131bcf4655ef390a
 
 
 
 
-    } catch (PDOException $e) {
+} catch (PDOException $e) {
         die("Query has failed: ". $e->getMessage());
     }
 ?>

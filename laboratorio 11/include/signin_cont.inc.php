@@ -23,4 +23,11 @@
     }
 
 
+
+    function create_user(object $pdo, string $firstname, string $email, string $password) {
+        
+        set_user( $pdo,  $firstname,  $email,  $password);
+    }
+
+
 ?>
