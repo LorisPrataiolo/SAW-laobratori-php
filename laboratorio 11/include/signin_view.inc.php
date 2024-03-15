@@ -6,7 +6,7 @@
 
 /*  verifichiamo se in SESSION sono stati registrati degli errori e li stampiamo */
     function check_signin_errors() {
-        if (isset($_SESSION["errors_signin"])) {
+        if (isset($_SESSION["errors_signin"]) && is_array($_SESSION["errors_signin"])) {
             $errors = $_SESSION["errors_signin"];
 
 

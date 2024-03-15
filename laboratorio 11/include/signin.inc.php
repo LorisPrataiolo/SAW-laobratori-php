@@ -41,7 +41,6 @@
         }
 
 
-    //  non ci siano errore possiamo procedere con la sessione
         require_once './config_session.inc.php';
 
         // nota: si e' corretto fare cosi' altrimenti non potremmos
@@ -50,6 +49,15 @@
             $_SESSION["errors_signin"] = $errors;
             header("Location: ../pages/signin.php");
         }
+
+
+        create_user( $pdo,  $firstname,  $email,  $password);
+        
+
+        /* una volta creato lo user, per il momento rispediamo l'utente alla home
+        page */
+
+        header("Location: ../index.php");
 
 
 

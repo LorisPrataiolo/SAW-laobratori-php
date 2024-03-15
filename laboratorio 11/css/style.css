@@ -128,3 +128,8 @@ input[type="submit"]:hover{
 
 
 /******************** print error ******************/
+.form-error{
+    color:rgb(192, 79, 117);
+
+    background-color: #252323;
+}
