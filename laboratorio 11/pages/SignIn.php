@@ -45,7 +45,11 @@
         <input type="password" id="password" name="password"><br>
 
         <input type="submit" name="Sign-In">
+
+        <?php check_signin_errors()?>
     </form>
+
+
 
 
 
