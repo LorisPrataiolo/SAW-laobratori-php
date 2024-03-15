@@ -21,6 +21,13 @@
             // dopo averli stampati mi premuro di eliminarli dalla variabile globale
             unset($_SESSION["errors_signin"]);
         }
+        
+        elseif (isset($_GET["signin"]) && $_GET["signin"] == "success") {
+
+            echo "<br>";
+            echo '<p class="form-success"> Sign In Success </p>';
+
+        }
     }
 
 ?>

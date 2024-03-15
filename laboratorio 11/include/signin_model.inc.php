@@ -28,7 +28,7 @@
 
     function set_user(object $pdo, string $firstname, string $email, string $password) {
        
-        $query = "INSERT INTO users (firstname, pwd, email) VALUES (:firstname, :email, :pwd );";
+        $query = "INSERT INTO users (firstname, email, pwd) VALUES (:firstname, :email, :pwd );";
 
         // Preparazione della query
             $stmt = $pdo->prepare($query);
