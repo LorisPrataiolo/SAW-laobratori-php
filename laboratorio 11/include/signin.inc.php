@@ -51,12 +51,11 @@
         }
 
 
-    <<< HEAD
+
             create_user( $pdo,  $firstname,  $email,  $password);
             
 
             /* una volta creato lo user, per il momento rispediamo l'utente alla home
-    <<<<<<< HEAD
             page. Scriveremo il messaggio di successo all'interno dell'url */
 
             
@@ -65,14 +64,11 @@
             $pdo = NULL;
             $stmt = NULL;
             die();
-    >>>>>>> Stashed changes
-    =======
-            page */
 
             header("Location: ../index.php");
 
 
-    >>>>>>> 3fa5c4e9eaf133948a60e4ba131bcf4655ef390a
+
 
 
 
