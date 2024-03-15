@@ -5,7 +5,7 @@
 
     function is_input_empty(string $firstname, string $password, string $email){
 
-        return (empty($firstname) ||  empty($password) || empty($email));
+        return ((empty($firstname) ||  empty($password) || empty($email)));
 
     }
 

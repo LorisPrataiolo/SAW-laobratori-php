@@ -2,7 +2,7 @@
 
 
     if (!$_SERVER["REQUEST_METHOD"] == "POST") {
-        header("Location: /" );
+        header("Location: ../index.php" );
         die();
     }
 
@@ -47,8 +47,8 @@
         // nota: si e' corretto fare cosi' altrimenti non potremmos
         // scrivere all'interno di $_SESSION
         if($errors) {
-            $_SESSION["errors_singin"] = $errors;
-            header("Location: ../index.php");
+            $_SESSION["errors_signin"] = $errors;
+            header("Location: ../pages/signin.php");
         }
 
 

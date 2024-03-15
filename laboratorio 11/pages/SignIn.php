@@ -1,3 +1,8 @@
+<?php
+    require_once '../include/config_session.inc.php'; // iniziamo la sessione
+    require_once '../include/signin_view.inc.php' // verifichiamo che non ci sino stati errori
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
