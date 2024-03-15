@@ -47,6 +47,23 @@
         // scrivere all'interno di $_SESSION
         if($errors) {
             $_SESSION["errors_signin"] = $errors;
+
+            /* con  signin data, voglio mantenere i dati dei campi
+            che sono stati compilati correttamente dell-utente in modo tale
+            che lui non debba reinserirli. eccezion fatta per la password per
+            questioni di sicurezza*/
+
+
+            $signin_data = [
+                "firstname" => $firstname,
+                "email" => $email,
+            ];
+
+            $_SESSION["signin_data"] = $signin_data;
+
+
+            /* ora ci colleghiamo con signin.php stampare queste varibili nei campi del form */
+
             header("Location: ../pages/signIn.php");
             die(); // senza die() all'interno del server si genererebbero comunque degli user con
                     // i campi vuoti; nonostante gli errori vengano correttamente identificati
