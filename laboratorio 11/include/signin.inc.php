@@ -48,11 +48,12 @@
         if($errors) {
             $_SESSION["errors_signin"] = $errors;
 
-            /* con  signin data, voglio mantenere i dati dei campi
-            che sono stati compilati correttamente dell-utente in modo tale
-            che lui non debba reinserirli. eccezion fatta per la password per
-            questioni di sicurezza*/
+            
 
+            /* Ora, anche se ci sono stati degli errori,con  signin data, 
+            voglio mantenere i dati di quei campi che sono stati compilati correttamente dell-utente in modo tale
+            che lui non debba reinserirli. eccezion fatta per la password per ovvie
+            questioni di sicurezza*/
 
             $signin_data = [
                 "firstname" => $firstname,

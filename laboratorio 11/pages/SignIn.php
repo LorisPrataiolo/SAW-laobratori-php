@@ -35,15 +35,8 @@
     <form method="post" action="../include/signin.inc.php">
 
 
-        <label for="firstname">Firstname</label><br>
-        <input type="text" id="firstname" name="firstname"><br>
-
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email"><br>
-
-        <label for="password">Password</label><br>
-        <input type="password" id="password" name="password"><br>
-
+        <?php signin_inputs() ?>
+        
         <input type="submit" name="Sign-In">
 
         <?php check_signin_errors()?>
