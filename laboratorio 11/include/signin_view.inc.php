@@ -8,10 +8,9 @@
  *   un messaggio di successo*/
     function check_signin_errors() {
         if (isset($_SESSION["errors_signin"]) && is_array($_SESSION["errors_signin"])) {
+
+
             $errors = $_SESSION["errors_signin"];
-
-
-            
 
             echo "<br>";
 
@@ -33,6 +32,8 @@
 
 
 
+    /* funzione che visualizza i campi di input del form di signin, e che nel caso
+    fossero stati corrattamente compilati (salvati in $_SESSION["signin_data"])  li ripresenta*/
     function signin_inputs()  {
         
 
@@ -78,6 +79,10 @@
         // contrariamente per la password il campo sara' sempre vuoto
         echo '<label for="password">Password</label><br>
         <input type="password" id="password" name="password"><br>';
+
+
+        echo '<label for="confirm_password">Confirm password</label><br>
+        <input type="password" id="confirm_password" name="confirm_password"><br>';
     }
 
 

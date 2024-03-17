@@ -34,8 +34,7 @@
             $stmt = $pdo->prepare($query);
 
 
-            /* ho aggiunto option per far si che nel qual caso uno volesse crackare la passuord in brute force
-            sarà rallentato dal costo */
+            
             $hashedPwd = password_hash($password, PASSWORD_BCRYPT);
     
         // Associazione del parametro :email con il valore della variabile $email

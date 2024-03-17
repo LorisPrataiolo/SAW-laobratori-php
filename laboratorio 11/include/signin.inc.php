@@ -10,6 +10,7 @@
     $firstname = $_POST["firstname"];
     $email = $_POST["email"];
     $password = $_POST["password"];
+    $confirm_password = $_POST['confirm_password'];
 
 
 
@@ -39,6 +40,13 @@
             have you forgotten your account credentials?";
 
         }
+
+        // verifichiamo che i campi password e confirm_password corrispondano
+        if($password != $confirm_password){
+            $errors["pwds_arent_equal"] = "The passwords do not match";
+        }
+
+
 
 
         require_once './config_session.inc.php';
