@@ -79,6 +79,8 @@ form {
     margin-top: 150px;
     -webkit-box-shadow: 1px 1px 55px 14px rgba(0,0,0,0.48); 
     box-shadow: 1px 1px 55px 14px rgba(0,0,0,0.48);
+    text-align: center; /* Centro il testo anche quando non c'è l'hover */
+
 
 }
 
@@ -96,6 +98,7 @@ form {
     cursor: pointer;
     border-radius: 88px;
     border-bottom: solid 0.5px rgba(10,10,10,1.0);
+    text-align: center;
 
 
 
