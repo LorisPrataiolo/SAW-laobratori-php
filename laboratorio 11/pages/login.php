@@ -1,3 +1,9 @@
+<?php
+    require_once '../include/config_session.inc.php'; // iniziamo la sessione
+    require_once '../include/login_view.inc.php' // verifichiamo che non ci sino stati errori
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +42,8 @@
 
 
         <input type="submit" name="Sign In">
+
+        <?php check_login_errors(); ?>
     </form>
 </main>
 

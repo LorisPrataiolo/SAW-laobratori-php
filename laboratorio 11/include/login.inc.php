@@ -72,6 +72,18 @@ try {
 
     /* tuttavia sappioamo che ogni 30 min l'id della sessione viene rigenerata automaticamente
     --> cambiamo il file conf_session */
+
+    $_SESSION["user_id"] = $result["id"];
+
+    $_SESSION["last_regenration"] = time();
+
+
+    header("Location: ../pages/login.php?login=success");
+    $pdo = null;
+    $statement = null ;
+
+    die();
+
     
 } catch (PDOException $e) {
     die("Query has failed: ". $e->getMessage());
