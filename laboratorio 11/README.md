@@ -20,3 +20,11 @@
 - le sessioni dovranno rispettano tutte le regole di restrizione
 - i cookie sono trasmessi solo su connessioni https
 - il sito e' accessibile solo in http e non puo' essere modificato da js 
+
+
+# login & Accesso area privata
+
+- verifica la correttezza delle credenziali
+- stampa un messaggio di login avvenuto
+- reindirizza l'utente verso la sua area privata altrimenti mostra una pagina di accesso negato (vedi nella cartella errors)
+
