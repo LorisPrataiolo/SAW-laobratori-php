@@ -29,7 +29,7 @@
 
         <?php if (isset($_SESSION["logout_success"])) {
         
-            echo "<p> Logout Success </p>";
+            echo '<p> Logout Success </p>';
             unset($_SESSION["logout_success"]);
 
         }?>
