@@ -19,11 +19,4 @@ function is_email_exsist (bool | array  $result_from_getUser) {
 
 
 
-function is_password_wrong ( string $password, string $hashedPwd ) {
-
-    return password_verify($password, $hashedPwd) ;
-} 
-
-
-
 ?>

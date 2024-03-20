@@ -33,7 +33,7 @@
 
 <main>
     <!-- Contenuto principale della pagina -->
-    <form method="post" action="../includes/login.inc.php">
+    <form method="post" action="../include/login.inc.php">
         <label for="email">Email</label><br>
         <input type="email" id="email" name="email"><br>
 

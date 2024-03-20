@@ -19,10 +19,15 @@
         <h3>Join to Project Unicorn</h3>
         <nav class="navbar">
             
+        <nav class="navbar">
+                
                 <a href="../index.php">Home</a>
                 <a href="./signin.php">Sing-In</a>
+                <a href="./login.php">Login</a>
                 <a href="contact.asp">Contact</a>
                 <a href="about.asp">About</a>
+            
+        </nav>
             
         </nav>
         

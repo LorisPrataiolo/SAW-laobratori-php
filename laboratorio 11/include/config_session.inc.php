@@ -32,30 +32,8 @@ session_set_cookie_params([
 
     // update per l' id di sessione associato all'utente
 
-    if(isset($_SESSION["user_id"])){
-        if (isset($_SESSION["last_regeneration"])) {
-        
-            // rigeneriamo l'id di sessione e viene aggiornato il timestamp
-            regenerate_session_id_loggedin();
-    
-    
-        }else {  // altrimenti ne creiamo una
-    
-           
-            $interval = 60 * 30;
-    
-    
-            // Verifica se è passato abbastanza tempo dall'ultima rigenerazione dell'ID della sessione
-    
-                if (time() -  $_SESSION["last_regeneration"] >= $interval)   {
-                    
-                    regenerate_session_id_loggedin();
-                }
-        }
-        
 
-    }else {
-        if (isset($_SESSION["last_regeneration"])) {
+    if (isset($_SESSION["last_regeneration"])) {
         
             // rigeneriamo l'id di sessione e viene aggiornato il timestamp
             regenerate_session_id();
@@ -74,25 +52,11 @@ session_set_cookie_params([
                     regenerate_session_id();
                 }
         }
-    }
 
 
 
-
-    function regenerate_session_id_loggedin(){
-        session_regenerate_id(true);
-        
-        $userId = $_SESSION["user_id"];
-        $newSessionId = session_create_id();
-        $sessionId = $newSessionId . '_' . $userId;
-        session_id($sessionId);
-
-
-        $_SESSION["last_regeneration"] = time();
-
-    }
 
     function regenerate_session_id() {
-        session_regenerate_id(true);
+        session_regenerate_id();
         $_SESSION["last_regeneration"] = time();
     }

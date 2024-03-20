@@ -16,7 +16,8 @@
             <nav class="navbar">
                 
                     <a href="./index.php">Home</a>
-                    <a href="./pages/signIn.php">Sing-In</a>
+                    <a href="./pages/signin.php">Sing-In</a>
+                    <a href="./pages/login.php">Login</a>
                     <a href="contact.asp">Contact</a>
                     <a href="about.asp">About</a>
                 
