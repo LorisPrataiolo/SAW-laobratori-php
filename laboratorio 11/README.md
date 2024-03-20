@@ -28,3 +28,10 @@
 - stampa un messaggio di login avvenuto
 - reindirizza l'utente verso la sua area privata altrimenti mostra una pagina di accesso negato (vedi nella cartella errors)
 
+
+
+Piccola legenda dei file:
+
+- '.inc' : è il file main dellla pagina di riferimento lato backend
+- '.model': metodi accesso al db 
+- '.cont(rol)': metodi di controllo degli input
