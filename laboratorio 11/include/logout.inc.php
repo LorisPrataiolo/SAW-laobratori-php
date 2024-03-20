@@ -7,6 +7,6 @@ session_destroy();
 
 $_SESSION["logout_success"] = "success";
 
-header("Location: /");
+header("Location: ../index.php");
 
 ?>

@@ -20,7 +20,7 @@
         <h3>LogIn</h3>
         <nav class="navbar">
             
-                <a href="/">Home</a>
+                <a href="../index.php">Home</a>
                 <a href="./signin.php">Sing-In</a>
                 <a href="contact.asp">Contact</a>
                 <a href="about.asp">About</a>

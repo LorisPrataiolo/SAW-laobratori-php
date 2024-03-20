@@ -4,7 +4,7 @@ require_once '../../include/config_session.inc.php'; // Start session
 
 // Verifico che la autenticazione sia avvenuta ( vedi file: login_view.inc.php)
 if (!isset($_SESSION["authenticated"]) || $_SESSION["authenticated"] !== true) {
-    header("Location: login.php");
+    header("Location: ../../errors/page_denied.err.php");
     exit();
 }
 ?>
