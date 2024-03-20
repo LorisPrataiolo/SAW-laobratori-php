@@ -5,4 +5,8 @@ session_unset();
 session_destroy();
 
 
+$_SESSION["logout_success"] = "success";
+
+header("Location: /");
+
 ?>
