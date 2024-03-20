@@ -22,6 +22,10 @@ try {
 
     $errors = [];
 
+
+    //NOTA: per il progetto dovremmo generalizzare gli errori per questioni di sicurezza es. "input non corretto"
+    
+
     if ( is_input_empty( $email,  $password )){
     
         $errors["empty_input"] = "Fill in all filelds";

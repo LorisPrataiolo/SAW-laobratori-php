@@ -42,7 +42,8 @@
         if (isset($_SESSION["signin_data"]["firstname"])) {
 
 
-            // verrra' cos' ristampato nel campo
+            // verrra' cos' ristampato nel campo con il dato corretto inserito dall'utente
+            // NOTA: dovrei inserire dei triggher o qualcosa per validare i nomi così non va bene
             echo'<label for="firstname">Firstname</label><br>
             <input type="text" id="firstname" name="firstname"
             value="'.$_SESSION["signin_data"]["firstname"].'"><br>';
