@@ -13,7 +13,7 @@
 
 
 session_set_cookie_params([
-    'lifetime' => 1800,         /* 30 minuti */
+    'lifetime' => 18*3600,      /* 18 ore */
     'domain' => 'localhost',    /* il dominio in cui il  cookie e' valido */
     'path' => '/',              /* valido su tutte le pagine del sito */
     'secure' => true,           /* cookie trasmesso solo su connessioni https */
@@ -30,33 +30,42 @@ session_set_cookie_params([
 
     session_start();
 
-    // update per l' id di sessione associato all'utente
+
+// Check if session ID regeneration is required
+if (!isset($_SESSION["last_regeneration"]) || time() - $_SESSION["last_regeneration"] >= 1800) {
+
+    // Regenerate session ID
+    session_regenerate_id(true); // True parameter destroys old session data
 
 
-    if (isset($_SESSION["last_regeneration"])) {
-        
-            // rigeneriamo l'id di sessione e viene aggiornato il timestamp
-            regenerate_session_id();
-    
-    
-        }else {  // altrimenti ne creiamo una
-    
-           
-            $interval = 60 * 30;
-    
-    
-            // Verifica se è passato abbastanza tempo dall'ultima rigenerazione dell'ID della sessione
-    
-                if (time() -  $_SESSION["last_regeneration"] >= $interval)   {
-                    
-                    regenerate_session_id();
-                }
-        }
+    // Update last regeneration timestamp
+    $_SESSION["last_regeneration"] = time();
+}
 
+// Implement session timeout
+    $session_timeout = 18*3600; // 18 ore
 
+    if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > $session_timeout)) {
 
+        // Expire session if inactive for too long
+        session_unset();
+        session_destroy();
 
-    function regenerate_session_id() {
-        session_regenerate_id();
-        $_SESSION["last_regeneration"] = time();
+        // Redirect to login page or display message
+        header("Location: ../pages/login.php");
+        exit;
     }
+
+// Update last activity timestamp
+$_SESSION['last_activity'] = time();
+
+
+
+
+
+
+
+
+
+
+?>
